@@ -1,14 +1,71 @@
 2222222222222
 
 A.  Explain what recursion is and when it is useful.
+    
+    Ans: Recursion is the function that it calls itself. It will keep looping until it reaches the termination step. The reason for it
+         to be useful is that it can help us do things, like mathematical sequences, easier.
+
     Explain what the |termination step| and |recursion step| are in a recursive method.
 
+    Ans: Termination step is the time that the function stop calling itself in certain conditions. It is usually the first line of the
+         first line of the loop which contain a boolean to tell the function when to terminate. On the other hand, the recursion step is
+         the opposite of the defintion of termination step. It is the last line of the method which calls the function to create a loop
+         that calls itself.
+         
 B.  Describe the difference between a Queue and a Stack.
 
+    Queue and stack are both linear structure but with a little differences. For queue, it develops in the horizontal way which creates
+    FIFO(First In First Out). When things go in, it is call add. When things being taken out, it is call remove. When taking a look of 
+    the first element, it is called peek. For stack, it develops in a vertical way which create the rule of LIFO(Last In First Out). 
+    Whenthings go in, it is called push. When things being taken away, it is called pop and the same name for taking a look of the first 
+    element as queue. 
+    
 C.  Write a class for an element of a doublely-linked list.
 
-D.  Explain what a Merkle Tree is.  
+public class DLnkList{
+  private DLnk head = new DLnk();
+    public int length = 0;
+    
+    public DLnkList(){}
+        public void addDLnk(DLnk newlink){
+            newlink.setNext(this.head);
+            this.head.setPrev(newlink);
+            this.head=newlink;
+            length=length + 1;}
+                
+    public DLnk getiLnk(int i){
+        DLnk it = this.head;
+        while(i>0){
+        it=it.getNext();
+        i=i-1;}
+        return it;}
+                  
+    public void removeHead(){
+        this.head=this.head.getNext();
+        this.head.setPrev(null);
+        length = length -1;}
+                  
+    public DLnk getHead(){
+        return this.head;}
+                   
+}
+
+D.  Explain what a Merkle Tree is.
+
+    Ans: Merkle tree is a kind of binary tree which merges tons of hash codes into one hash.
+    
     Describe the structure and purpose of a Merkle Tree.
+    
+    Ans: The structure of the merkel tree is just as same as a normal binary tree. It got children, roots and other essential elements. 
+         Assume that 4 objects need to be organized into one catagory. First, we take the hash code of the four. Then, we combine the 
+         first 2 and the last 2. Afterwards, we combine the hash that we get from the combination of 1 and 2 and the hash of the 
+         combiantion from 3 and 4. This can end up getting a hash code that includes all the data.
+    
     What is the Merkle root?
+     
+    Ans: Merkle root is an element that exists at the top of the tree.(Final hash code)
+    
     What is the function of a certificate in this data structure?
     
+    Ans: The function of a certificate is with binary system. The number of leaves is 2 to the power of n. Therefore, in order to get 
+         data, we just need to use log base 2.    
