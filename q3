@@ -2,13 +2,23 @@
 
 A.  Explain how digital signature works with public/private keypairs.
 
+    Digital signiture is the data encrytion key which have public keypairs and private keypairs. Public keypairs are a encryted code 
+    that is released to pulic. Private keypairs are encryted code as well,but it is not released to public. It only belongs to owners.
+    Therefore, public keypairs are for generals to verify their files.Private keypairs also work same, but it can be used for more
+    privately. This can be used and differentiated efficiently by bureaucracy.
+
 B.  Identify your favorite Java project this semester.  
     Describe two things you learned by doing the project.
     Describe two ways in which the project could be improved or expanded.
     
+    To me, binary trees and　 
+    
 C.  Describe two advantages of object-oriented programming.
     Describe two disadvantages of object-oriented programming.
     
+    advantages: easy to maintian and modify, provides a good framework for code libraries
+    disadvantages: the size is larger than other program, the speed is slower mostly because of their size.
+     
 D.  Consider the following PYTHON code for the MNode class given below.
     What is the difference in the way Python and Java handle the declaration of datatypes?
     Explain the difference in how constructors are written in Python vs Java.
