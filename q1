@@ -16,7 +16,29 @@ public class Wizard{
 }
 
 A.  Write a method for the Wizard class named "powerUp" that adds 10 to the field "points".
+
+public void powerUp(){
+  this.points = this.points + 10;
+}
+  
 B.  Write a method "cast" that casts the n-th element of the "spells" array.  
     Include an interface (seperately) for the Spell class to insure your "cast" method will interact with the class.
+    
+    1.public Spell cast(int n){
+        return spells[n-1];}
+          
+    2.public interface Spellcaster{
+        public Spell cast();}        
+    
 C.  Write a "hello" method that prints an introduction stating the name of the Wizard.
+
+public void hello(){
+  System.out.println("Hi, my name is " + this.name + ". I am a Wizard.");
+}
+
 D.  Write a main method for the Wizard class.  In it construct a wizard with name "Harry Poppins".  Use the hello() method.
+
+public static void main(String[] args){
+  Wizard  Google = new Wizard("Harry Poppins");
+  Google.hello();
+}
