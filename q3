@@ -11,7 +11,10 @@ B.  Identify your favorite Java project this semester.
     Describe two things you learned by doing the project.
     Describe two ways in which the project could be improved or expanded.
     
-    To me, binary trees and　 
+    To me, binary trees and queue & stack are both my favorite project this semster. In binary trees, I can vividly see how the porcess
+    of data catagorizing works and learn how to compile the code of it. In stack and queue, I learned about how to create links of data
+    which is also use in some serch engine like google or yahoo. I can improve the project by creating a real and functioning App for 
+    smartphone users.
     
 C.  Describe two advantages of object-oriented programming.
     Describe two disadvantages of object-oriented programming.
@@ -23,6 +26,11 @@ D.  Consider the following PYTHON code for the MNode class given below.
     What is the difference in the way Python and Java handle the declaration of datatypes?
     Explain the difference in how constructors are written in Python vs Java.
     Which language do you prefer?  Explain why.
+    
+    In fact, python doesn't need to declare the data type; however, when using java, users do need to declare the data type. Furthermore,
+    some techinical phrase are also different in java and python. When compiling a constructer for java, we use class(object). On the other hand, we use "init" in python. 
+    Likwise, we use "this" in java but "self" in python. TO me, Java is more likely to be my preference of code compiling. The reason is that 
+    Java covers more type of code writing and there are more people using java than python. Furthermore, java might benefits me in my future education.
 -------------------------------------------------------------------------------------
     import hashlib
 
